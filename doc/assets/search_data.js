@@ -1,0 +1,1 @@
+window.searchData = [{"t":"Base64","p":"mixins/Base64.html"},{"t":"Base64.coffee","p":"files/Base64.coffee.html"},{"t":"Base64.encode","p":"files/Base64.coffee.html#Base64.encode-file","h":"Base64.coffee"},{"t":"Base64.decode","p":"files/Base64.coffee.html#Base64.decode-file","h":"Base64.coffee"},{"t":"README.md","p":"README.md.html"},{"t":"LICENSE.md","p":"LICENSE.md.html"}]
