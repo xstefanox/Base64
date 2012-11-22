@@ -44,7 +44,7 @@
     }
     output = '';
     i = 0;
-    input = input.replace(/[^A-Za-z0-9\+\/\=]/g, '');
+    input = String(input).replace(/[^A-Za-z0-9\+\/\=]/g, '');
     while (i < input.length) {
       enc1 = Base64.key.indexOf(input.charAt(i));
       i += 1;

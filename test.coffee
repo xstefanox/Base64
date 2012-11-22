@@ -46,3 +46,7 @@ describe 'Base64', ->
   describe "decode with no arguments", ->
     it 'should return undefined', ->
       assert.equal(Base64.decode(), undefined)
+      
+  describe "encode a number", ->
+    it 'should convert the number into a string and the encode it', ->
+      assert.equal(Base64.encode(100), Base64.encode('100'))

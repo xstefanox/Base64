@@ -66,7 +66,7 @@ Base64.encode = (input) ->
 Base64.decode = (input) ->
   
   return input if not input?
-            
+  
   # final output string
   output = ''
         
@@ -76,7 +76,7 @@ Base64.decode = (input) ->
   # loop counter
   i = 0
 
-  input = input.replace(/[^A-Za-z0-9\+\/\=]/g, '')
+  input = String(input).replace(/[^A-Za-z0-9\+\/\=]/g, '')
 
   while i < input.length
 
