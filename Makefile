@@ -1,7 +1,7 @@
 all: Base64.min.js
 
 Base64.min.js: Base64.js
-	uglifyjs --output Base64.min.js Base64.js
+	uglifyjs --ascii --output Base64.min.js Base64.js
 	
 Base64.js:
 	coffee -c Base64.coffee
