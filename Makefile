@@ -1,10 +1,11 @@
 all: Base64.min.js
 
 Base64.min.js: Base64.js
-	uglifyjs --no-copyright --output Base64.min.js Base64.js
+	uglifyjs --output Base64.min.js Base64.js
 	
 Base64.js:
 	coffee -c Base64.coffee
+	sed -i '' -e '1,2 d' -e '3 N;s/\n/ /;' -e '4 N;s/\n/ /;' Base64.js
 
 lint:
 	coffeelint Base64.coffee

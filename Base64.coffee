@@ -1,3 +1,7 @@
+###
+The MIT License, Copyright (c) 2012 Stefano Varesi
+###
+
 # target both CommonJS and the browser
 global = exports ? this
 
